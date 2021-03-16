@@ -7,23 +7,23 @@ const Search=()=>{
     const [keySearch, setKeySearch]=useState("");
     const [userphotos, setUserphotos]=useState([]);
     
-    const handleInput=(Event)=>{
+    const handelInput=(Event)=>{
         setKeySearch(Event.target.value);
         console.log(keySearch);
     }
-    const handleSubmit=()=>{
+    const handelEnterKeyPressed=()=>{
         const unsplash="http://api.unsplash.com/search/photos?page=1&query="+keySearch+"&client_id="+Access;
     axios.get(unsplash).then((response)=>{
         console.log(response);
         setUserphotos(response.data.results)
     })
     }
-
+//http://api.unsplash.com/search/photos?page=1&query=cat&client_id=IwuZoAdAC50Pr_6qx1kzIFdK0NENSBE3zvZni0EhtOA
     return (
         <div>
             <br/>
-            <input class="search" type="text" onChange={handleInput}/> 
-            <button onClick={handleSubmit} >search</button>
+            <input class="search" type="text" onChange={handelInput} onKeyPress={handelEnterKeyPressed}/> 
+            
             <div className="gallery">
             {userphotos.map(items=>(
                 <Post list={items}/>
