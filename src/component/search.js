@@ -22,7 +22,7 @@ const Search=()=>{
     return (
         <div>
             <br/>
-            <input class="search" type="text" onChange={handelInput} onKeyPress={handelEnterKeyPressed}/> 
+            <input class="search" type="text" onChange={handelInput} onKeyPress={handelEnterKeyPressed} value={keySearch}/> 
             
             <div className="gallery">
             {userphotos.map(items=>(
