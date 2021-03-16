@@ -22,7 +22,8 @@ const Search=()=>{
     return (
         <div>
             <br/>
-            <input class="search" type="text" onChange={handleInput} onKeyPress={handleSubmit}/> 
+            <input class="search" type="text" onChange={handleInput}/> 
+            <button onClick={handleSubmit} >search</button>
             <div className="gallery">
             {userphotos.map(items=>(
                 <Post list={items}/>
