@@ -11,7 +11,7 @@ const Post = ({ list }) => {
                         />
                     </div>
                     <div class="photo__header-column">
-                        <span class="photo__username"><a  href={"/profile/"+list.user.username}>{list.user.username}</a></span>
+                        <span class="photo__username"><a  href={"/showuser/"+list.user.username}>{list.user.username}</a></span>
                     </div>
                 </header>
                 <div class="photo__file-container">

@@ -2,8 +2,8 @@ import axios from 'axios';
 import React, { useState,useEffect } from 'react';
 
 
-const Profile=({id})=>{
-    const Access ="IwuZoAdAC50Pr_6qx1kzIFdK0NENSBE3zvZni0EhtOA";
+const Showuser=({id})=>{
+    const Access ="XvbKxMT9Uzr1LkJVhrlYZsRdNI0o6PU8v_HOSdcvNy4";
     const [user, setUser]=useState([]);
     
     
@@ -27,4 +27,4 @@ const Profile=({id})=>{
         </div>
     )
 }
-export default Profile;
+export default Showuser;

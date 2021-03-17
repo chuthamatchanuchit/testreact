@@ -3,7 +3,7 @@ import Search from '../component/search';
 const home=()=> {
     return (
         <div>
-            <h1>PORAMIN</h1>
+            <h1>chuthamat</h1>
             <Search/>
         </div>
     )

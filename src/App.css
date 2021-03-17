@@ -3,26 +3,31 @@
 }
 
 body {
-  margin: 10;
-  color: rgb(51, 23, 11);
+  margin: 0;
+  color: black;
   
-  background: #ffffff;
+  background: #193549;
   text-align: center;
-  font-family: "Courier New" ;
+  font-family: "helvetica neue", sans-serif;
   font-weight: 100;
   font-size: 20px;
 }
 
 h1 {
   text-align: center;
-  font-family: "Courier New";
-  color: rgb(51, 23, 11);
+  font-family: cursive;
+  color: white;
   padding: 2rem 15rem;
 
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 input {
-  border: 3px solid rgb(51, 23, 11);
+  border: 1px solid #dfe1e5;
   border-radius: 24px;
 
   width: 50%;
@@ -30,7 +35,7 @@ input {
 
   padding: 20px;
   margin-bottom: 42px;
-  font-family: "Courier New";
+
   font-size: 20px;
 }
 
@@ -42,15 +47,13 @@ input:focus {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
- width: auto;
- height: auto;
 }
 
 .photo {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
+  width: 60%;
+  background-color: white;
   border-radius: 5px;
-  border: 3px solid rgb(51, 23, 11);
+  border: 1px solid rgba(0, 0, 0, 0.0975);
   max-width: 400px;
   margin-bottom: 40px;
 }
@@ -88,7 +91,6 @@ input:focus {
 
 .photo__icons {
   margin-bottom: 10px;
-  color: rgb(51, 23, 11);
   font-size: 18px;
 text-align: left;
 }
@@ -148,8 +150,4 @@ text-align: left;
 
 .heart-red {
   color: red;
-}
-a{
-  text-decoration: none;
-  color: rgb(51, 23, 11);
 }
